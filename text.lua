@@ -120,7 +120,8 @@ local p = {
     "Gear 5 Luffy",
     "Esper",
     "Astolfo Summer Character",
-    "Red Emperor"
+    "Red Emperor", 
+    "Tengu"
 }
 local q = {
     "Infinite Mode",
@@ -135,7 +136,7 @@ local q = {
 }
 local r = {"Easy", "Hard", "Nightmare", "Infinite"}
 local s = {"Capsule Series 1", "Tengu Capsule", "Gear 5 Fluffy Capsule", "Red Emperor Capsule", "Raid Capsule"}
-local t = { "Tengoku Raid", "Hirito Raid", "Titan Raid", "Red Emperor Raid", "Gear 5 Fluffy Raid"}
+local t = { "Tengoku Raid", "Hirito Raid", "Titan Raid", "Red Emperor Raid", "Gear 5 Fluffy Raid", "Tengu Raid"}
 local u = loadstring(game:HttpGet("https://www.klgrth.io/paste/gs77p/raw"))()
 local v = u:MakeWindow({Name = "☀️ Sun Hub ☀️", HidePremium = true})
 local w = v:MakeTab({Name = "Main", PremiumOnly = false})
