@@ -1,6 +1,6 @@
---whitelist 
+--whitelist---
 local userkey = "https://raw.githubusercontent.com/lam29042008/key/main/key%20wl" -- link here
-local blacklist = "https://raw.githubusercontent.com/lam29042008/key/main/key%20wl" -- link here
+local blacklist = "https://raw.githubusercontent.com/lam29042008/key/main/key%20bl" -- link here
 local key = game:HttpGet(userkey, true)
 local banned = game:HttpGet(blacklist, true)
 plr = game.Players.LocalPlayer
