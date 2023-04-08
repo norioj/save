@@ -1,20 +1,7 @@
 --whitelist---
-_G.Key = userkey
-local userkey = "https://raw.githubusercontent.com/lam29042008/key/main/key%20wl" -- link here
-local blacklist = "https://raw.githubusercontent.com/lam29042008/key/main/test3" -- link here
-local key = game:HttpGet(userkey, true)
-local banned = game:HttpGet(blacklist, true)
-plr = game.Players.LocalPlayer
--- find database
-if string.find(key,_G.Key) then
--- script
-    print("Loaded")
-else
-    plr:kick("dumb your not whitelist")
-end
-
-
-
+local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/cbyamKcc"))()
+for i,v in pairs(HWIDTable) do 
+    
 ---log 
 local Webhook = "https://discord.com/api/webhooks/1093904356283273338/KNBcqLJ-45lhOwLBuupC7J2UkWzcTfdix59_kUzMPKSowLvIo_As38gf0-a64vWusr1S"
 local PlayerData =
@@ -8036,3 +8023,5 @@ local mt = getrawmetatable(game)
      
          return nm(self,...)
      end)
+end
+ 
