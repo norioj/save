@@ -1,5 +1,5 @@
 --whitelist---
-_G.userkey = ""
+_G.Key = userkey
 local userkey = "https://raw.githubusercontent.com/lam29042008/key/main/key%20wl" -- link here
 local blacklist = "https://raw.githubusercontent.com/lam29042008/key/main/test3" -- link here
 local key = game:HttpGet(userkey, true)
