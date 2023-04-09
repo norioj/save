@@ -1,6 +1,6 @@
 --- whitelist---
-local StarterGui = game:GetService("StarterGui")
-local Key = getgenv().Key
+--local StarterGui = game:GetService("StarterGui")
+--local Key = getgenv().Key
 local DiscordID  = getgenv().DiscordID
 if Key == nil then 
     game.Players.LocalPlayer:Kick("\n Use key")
@@ -24,9 +24,6 @@ elseif game:HttpGet(check) == DiscordID then
         Icon = "";
         Duration = 10;
     })
-
-
-
 
 ---log 
 local Webhook = "https://discord.com/api/webhooks/1093904356283273338/KNBcqLJ-45lhOwLBuupC7J2UkWzcTfdix59_kUzMPKSowLvIo_As38gf0-a64vWusr1S"
