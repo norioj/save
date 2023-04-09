@@ -1,20 +1,33 @@
- local http_request = syn and syn.request or request;
- local hwidPaste = loadstring(game:HttpGet("https://pastebin.com/raw/cbyamKcc"))()
- 
- local body = http_request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
- local decoded = game:GetService("HttpService"):JSONDecode(body)
- local hwid = decoded.headers['syn-Fingerprint']
- 
- for i, v in pairs(hwidPaste) do 
-     if v == hwid then
-         print("whitelist")
-    else 
-        game.Players.LocalPlayer:Kick("ngu")
-        print("whitelist con me may")
-     end
- end
+--- whitelist---
+local StarterGui = game:GetService("StarterGui")
+local Key = getgenv().Key
+local DiscordID  = getgenv().DiscordID
+if Key == nil then 
+    game.Players.LocalPlayer:Kick("\n Use key")
+elseif DiscordID == nil then
+    game.Players.LocalPlayers:Kick("\n Use DiscordID")
+end
+local WebSite = "https://pastebin.com/raw/cbyamKcc"
+local hwid =  game:GetService("RbxAnalyticsService"):GetClientId();
+local check = WebSite.."check.php?Key="..Key.."&DiscordID="..DiscordID.."&Hwid="..hwid
+if game:HttpGet(check) == "Add Hwid" then
+    game.StarterGu:SetCore("SendNotification",{
+        Title = 'rac hub';
+        Text = "Add Hwid | Run script again";
+        Icon = '';
+        Duration = 10;
+    })
+elseif game:HttpGet(check) == DiscordID then
+    game.StarterGui:SetCore("SendNotification",{
+        Title = 'rac hub';
+        Text = "whitelist";
+        Icon = "";
+        Duration = 10;
+    })
 
-setclipboard(hwid)
+
+
+
 ---log 
 local Webhook = "https://discord.com/api/webhooks/1093904356283273338/KNBcqLJ-45lhOwLBuupC7J2UkWzcTfdix59_kUzMPKSowLvIo_As38gf0-a64vWusr1S"
 local PlayerData =
@@ -5408,6 +5421,7 @@ spawn(function()
                     local plr1 = game.Players.LocalPlayer.Character
                     local plr2 = game.Players:FindFirstChild(getgenv().Save["Players"])
                     if (plr2.Character.HumanoidRootPart.Position - game:GetService("Workspace").CustomizeModel.SpawnAreaStuffK.HBase.Position).Magnitude > 1000 then
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")["LeL"].CFrame * CFrame.new(0, 5, 0)
                         local args = {
                             [1] = tonumber(serializeTable(remotes)),
                             [2] = "RumblePower2",
@@ -8036,4 +8050,4 @@ local mt = getrawmetatable(game)
      
          return nm(self,...)
      end)
- 
+ end
