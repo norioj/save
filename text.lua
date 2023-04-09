@@ -1,7 +1,7 @@
 --- whitelist---
---local StarterGui = game:GetService("StarterGui")
+local StarterGui = game:GetService("StarterGui")
 --local Key = getgenv().Key
-local DiscordID  = getgenv().DiscordID
+--local DiscordID  = getgenv().DiscordID
 if Key == nil then 
     game.Players.LocalPlayer:Kick("\n Use key")
 elseif DiscordID == nil then
