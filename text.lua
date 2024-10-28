@@ -85,4 +85,4 @@ pcall(function()
         end
     end)
 end)
-game:GetService("RunService"):Set3dRenderingEnabled(true)
+game:GetService("RunService"):Set3dRenderingEnabled(false)
